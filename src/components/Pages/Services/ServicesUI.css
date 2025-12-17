@@ -1,0 +1,143 @@
+/* PAGE */
+.services-page {
+  background: #f4f6f8;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* HERO */
+.services-hero {
+  background: linear-gradient(135deg, #0f4c81, #1b6cb8);
+  color: #fff;
+  padding: 90px 20px 120px;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.services-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+.services-container {
+  max-width: 1200px;
+  margin: -80px auto 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.card-image {
+  height: 210px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.12);
+}
+
+/* CONTENT */
+.card-content {
+  padding: 22px;
+}
+
+.card-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.icon-box {
+  background: #1b6cb8;
+  color: #fff;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b6cb8;
+}
+
+/* DESCRIPTION */
+.card-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #1b6cb8;
+}
+
+.card-footer svg {
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .card-footer svg {
+  transform: translateX(6px);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .services-hero h1 {
+    font-size: 32px;
+  }
+}

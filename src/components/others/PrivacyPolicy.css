@@ -1,0 +1,139 @@
+/* Base */
+.privacy-page {
+  background: #f4f6fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Hero */
+.privacy-hero {
+  position: relative;
+  height: 340px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.privacy-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.18;
+}
+
+.privacy-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.privacy-hero-content h1 {
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+.privacy-hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Content */
+.privacy-content {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.privacy-card {
+  background: #fff;
+  max-width: 950px;
+  width: 100%;
+  padding: 45px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Sections */
+.privacy-section {
+  margin-bottom: 32px;
+}
+
+.privacy-section h2 {
+  font-size: 22px;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.section-content p,
+.section-content li {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.section-content ul {
+  padding-left: 20px;
+}
+
+.section-content h4 {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Grievance Box */
+.grievance-box {
+  background: #f1f5ff;
+  border-left: 4px solid #2a5298;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.grievance-box a {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(25px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .privacy-card {
+    padding: 25px;
+  }
+}

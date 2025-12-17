@@ -1,0 +1,158 @@
+/* Container */
+.wp-container {
+  /* padding: 1rem;
+  max-width: 900px; */
+  margin: auto;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Title */
+.wp-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Card Layout */
+.wp-card {
+  display: flex;
+  gap: 25px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.wp-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Left Section */
+.wp-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.wp-profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Verified Badge */
+.wp-status {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wp-status.verified {
+  background: #e6ffe8;
+  color: #098d19;
+  border: 1px solid #12c72e;
+}
+
+.wp-status.not-verified {
+  background: #ffecec;
+  color: #d11c1c;
+  border: 1px solid #ff3b3b;
+}
+
+/* Right Details Section */
+.wp-details {
+  flex: 1;
+  font-size: 16px;
+}
+
+.wp-details p {
+  margin: 8px 0;
+}
+
+/* Document Title */
+.wp-doc-title {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Document Grid */
+.wp-doc-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.wp-doc-item {
+  text-align: center;
+}
+
+.wp-doc-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading & Error UI */
+.wp-loading,
+.wp-error {
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.wp-error {
+  color: red;
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------------------------- */
+
+@media (max-width: 850px) {
+  .wp-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wp-left {
+    width: 100%;
+  }
+
+  .wp-doc-grid {
+    justify-content: center;
+  }
+
+  .wp-details {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wp-profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .wp-doc-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .wp-card {
+    padding: 18px;
+  }
+}

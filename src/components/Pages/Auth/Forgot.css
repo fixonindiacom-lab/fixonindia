@@ -1,0 +1,68 @@
+/* ===============================
+   FORGOT PASSWORD
+================================*/
+
+.fp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+.fp-form {
+  background: #fff;
+  width: 380px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.fp-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.fp-msg {
+  background: #e8f0fe;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.fp-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.fp-input:focus {
+  border-color: #007bff;
+}
+
+.fp-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fp-btn:hover {
+  background: #0066d3;
+}

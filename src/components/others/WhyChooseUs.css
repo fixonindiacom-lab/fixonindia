@@ -1,0 +1,130 @@
+.why-choose-us {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.why-choose-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Column ===== */
+.left-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  display: block;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.points-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.point-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 0.6s forwards;
+}
+
+.point-card:nth-child(1) { animation-delay: 0s; }
+.point-card:nth-child(2) { animation-delay: 0.1s; }
+.point-card:nth-child(3) { animation-delay: 0.2s; }
+.point-card:nth-child(4) { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.point-icon {
+  font-size: 2rem;
+  color: #007bff;
+  min-width: 50px;
+}
+
+.point-title {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.point-description {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== Right Column ===== */
+.right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right-column img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.right-column img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 900px) {
+  .why-choose-us .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .left-column, .right-column {
+    min-width: 100%;
+  }
+
+  .points-container {
+    align-items: center;
+  }
+
+  .point-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .point-icon {
+    margin-bottom: 10px;
+  }
+}

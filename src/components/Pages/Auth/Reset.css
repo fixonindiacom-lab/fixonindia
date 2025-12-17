@@ -1,0 +1,73 @@
+/* Wrapper for full page */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* White card */
+.auth-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.auth-header {
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Info or error message */
+.auth-alert {
+  text-align: center;
+  color: #d93025; /* red */
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.auth-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.auth-field:focus {
+  border-color: #007bff; /* blue */
+}
+
+/* Submit button */
+.auth-submit {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-submit:hover {
+  background-color: #0056b3;
+}
+
+.auth-submit:disabled {
+  background-color: #7aa7e0;
+  cursor: not-allowed;
+}

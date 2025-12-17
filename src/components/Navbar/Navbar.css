@@ -1,0 +1,425 @@
+/* ============================
+   NAVBAR MAIN
+============================= */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInNav 0.5s ease;
+}
+
+/* Inner container */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 12px 20px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.logo-img {
+  /* width: 45px; */
+  height: 55px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(10deg);
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #6a5af9;
+}
+
+/* Desktop links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6a5af9;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after, .nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #6a5af9;
+  font-weight: 600;
+}
+
+/* Profile / Auth Buttons */
+.profile-actions, .auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #6a5af9;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(106,90,249,0.25);
+}
+
+.profile-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.logout-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(231,76,60,0.3);
+}
+
+.login-btn {
+  padding: 6px 14px;
+  color: #6a5af9;
+  background: none;
+  border-radius: 8px;
+}
+
+.signup-btn {
+  padding: 6px 14px;
+  background: #6a5af9;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(106,90,249,0.25);
+}
+
+/* Hamburger */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.mobile-menu .nav-item {
+  color: #555;
+}
+
+.mobile-menu .nav-item:hover, .mobile-menu .nav-item.active {
+  color: #6a5af9;
+}
+
+.mobile-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  padding: 8px 12px;
+  background: #6a5af9;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mobile-profile:hover {
+  transform: translateY(-1px);
+}
+
+.mobile-profile-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-login, .mobile-signup {
+  color: #6a5af9;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mobile-logout {
+  color: #e74c3c;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 4px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .navbar-links, .profile-actions, .auth-buttons {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+}
+
+/* Animations */
+@keyframes fadeInNav {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   NAVBAR BUTTONS & PROFILE
+============================= */
+
+/* Common style for all buttons */
+.profile-btn,
+.logout-btn,
+.login-btn,
+.signup-btn,
+.mobile-profile,
+.mobile-logout,
+.mobile-login,
+.mobile-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 9999px; /* pill-shaped */
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+/* Profile Button - Only circular pic */
+.profile-btn,
+.mobile-profile {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid #6a5af9;
+}
+.profile-btn img,
+.mobile-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+.profile-btn:hover img,
+.mobile-profile:hover img {
+  transform: scale(1.1);
+}
+
+/* Logout button */
+.logout-btn,
+.mobile-logout {
+  background: #e74c3c;
+  color: #fff;
+}
+.logout-btn:hover,
+.mobile-logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Login button */
+.login-btn,
+.mobile-login {
+  background: #fff;
+  color: #6a5af9;
+  border: 2px solid #6a5af9;
+}
+.login-btn:hover,
+.mobile-login:hover {
+  background: #6a5af9;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(106, 90, 249, 0.2);
+}
+
+/* Signup button */
+.signup-btn,
+.mobile-signup {
+  background: #6a5af9;
+  color: #fff;
+  border: 2px solid #6a5af9;
+}
+.signup-btn:hover,
+.mobile-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(106, 90, 249, 0.25);
+}
+
+/* Spacing between buttons */
+.profile-actions,
+.auth-buttons,
+.mobile-auth {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Mobile buttons */
+.mobile-auth {
+  flex-direction: row;
+  gap: 60%;
+}
+
+/* Hamburger button for mobile */
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Show mobile menu on small screens */
+@media screen and (max-width: 900px) {
+  .navbar-links,
+  .profile-actions,
+  .auth-buttons {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .mobile-menu {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+}
+
+/* Animations */
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

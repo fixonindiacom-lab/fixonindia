@@ -1,0 +1,95 @@
+
+/* HERO */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background: #eef4ff;
+  gap: 20px;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 20px;
+}
+.hero-left h1 {
+  font-size: 38px;
+}
+.hero-left p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.hero-points {
+  margin-top: 20px;
+}
+.hero-points li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* HERO FORM */
+.hero-right {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #00000020;
+  width: 380px;
+}
+.hero-right h2 {
+  margin-bottom: 15px;
+}
+.hero-right form input,
+.hero-right form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.hero-right form button {
+  width: 100%;
+  padding: 12px;
+  background: #0057ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .hero-container {
+    padding: 50px 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

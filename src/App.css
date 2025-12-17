@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight:500;
+  font-family: "Poppins", sans-serif !important; 
+}
+
+body {
+  /* background: var(--bg);
+  color: var(--text); */
+  transition: 0.3s;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+/* Container for the whole page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* light gray background */
+  font-family: Arial, sans-serif;
+}
+
+/* Card/Form container */
+.login-card {
+  background-color: #ffffff; /* white card */
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header title */
+.login-header {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Message/Alert */
+.login-alert {
+  margin-bottom: 15px;
+  color: #d93025; /* red for errors */
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Input fields */
+.login-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-field:focus {
+  border-color: #007bff; /* blue on focus */
+}
+
+/* Submit button */
+.login-submit {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff; /* professional blue */
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-submit:hover {
+  background-color: #0056b3;
+}
+
+.login-submit:disabled {
+  background-color: #7aa7e0;
+  cursor: not-allowed;
+}
+
+/* Footer / forgot password */
+.login-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.login-footer span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.login-footer span:hover {
+  text-decoration: underline;
+}

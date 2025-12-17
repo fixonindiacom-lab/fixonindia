@@ -1,0 +1,107 @@
+/* Page Layout */
+.terms-page {
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.terms-hero {
+  position: relative;
+  height: 320px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Content Section */
+.terms-content {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-card {
+  background-color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual Sections */
+.terms-section {
+  margin-bottom: 32px;
+}
+
+.terms-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.terms-section p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.terms-section li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .terms-card {
+    padding: 25px;
+  }
+}

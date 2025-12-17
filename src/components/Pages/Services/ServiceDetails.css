@@ -1,0 +1,132 @@
+.details-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.details-image {
+  width: 45%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.details-content {
+  flex: 1;
+}
+
+.price-tag {
+  font-size: 26px;
+  color: green;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.back-btn {
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+  background: #0057ff;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.details-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.details-image {
+  width: 45%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.details-content {
+  flex: 1;
+}
+
+.price-tag {
+  font-size: 26px;
+  color: green;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.back-btn {
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+  background: #0057ff;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+/* -------------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------------- */
+
+/* Tablet (900px and below) */
+@media (max-width: 900px) {
+  .details-container {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .details-image {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .price-tag {
+    font-size: 22px;
+  }
+}
+
+/* Mobile (700px and below) */
+@media (max-width: 700px) {
+  .details-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .details-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .details-content {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .price-tag {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
