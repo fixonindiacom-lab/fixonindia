@@ -32,6 +32,9 @@ export default function WorkerLayout() {
           <NavLink to="tasks" className="wl-link">
             Tasks
           </NavLink>
+          <NavLink to="admin" className="wl-link">
+            Amin
+          </NavLink>
         </nav>
       </aside>
 

@@ -220,8 +220,8 @@ const BookingPop = ({ initialService = null, onClose }) => {
             />
             {errors.phone && <p style={{ color: "red" }}>{errors.phone}</p>}
 
-            <button onClick={getLocation} style={{ padding: 12, marginRight: 8, marginTop: 8 }}>Get Location</button>
-            <button onClick={createBooking} disabled={loading} style={{ padding: 12, marginTop: 8 }}>
+            <button onClick={getLocation} style={{ padding: 12, marginRight: 8, marginTop: 8 , borderRadius:"7px" ,  background:"#d3d3d3ff" , border:"1px solid #707070ff "  }}>Get Location</button>
+            <button onClick={createBooking} disabled={loading} style={{ padding: 12, marginTop: 8 , borderRadius:"7px" , background:"#bdbdbdff" , border:"1px solid #707070ff "}}>
               {loading ? "Creating..." : "Confirm Booking"}
             </button>
           </div>
