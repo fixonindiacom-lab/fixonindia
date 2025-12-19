@@ -73,8 +73,34 @@ export default function WorkerRegister() {
 
         {/* CAMERA ONLY */}
         <CameraCapture label="Profile Picture" onCapture={setProfilePic} />
+
+
+
         <CameraCapture label="Aadhaar Card" onCapture={setAadharPic} />
+                <label>Aadhar Card Picture</label>
+        <input
+          type="file"
+          accept="image/*"
+          capture="environment"
+          onChange={(e) => setAadharPic(e.target.files[0])}
+          required
+        />
+
         <CameraCapture label="PAN Card" onCapture={setPanPic} />
+        <label>PAN Card Picture</label>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={(e) => setPanPic(e.target.files[0])}
+          required
+        />
+
+
+
+
+
+        
+        
 
         <button disabled={loading}>
           {loading ? "Registering..." : "Register Worker"}
@@ -235,22 +261,22 @@ export default function WorkerRegister() {
 //           required
 //         />
 
-//         <label>Aadhar Card Picture</label>
-//         <input
-//           type="file"
-//           accept="image/*"
-//           capture="environment"
-//           onChange={(e) => setAadharPic(e.target.files[0])}
-//           required
-//         />
+        // <label>Aadhar Card Picture</label>
+        // <input
+        //   type="file"
+        //   accept="image/*"
+        //   capture="environment"
+        //   onChange={(e) => setAadharPic(e.target.files[0])}
+        //   required
+        // />
 
-//         <label>PAN Card Picture</label>
-//         <input
-//           type="file"
-//           accept="image/*"
-//           onChange={(e) => setPanPic(e.target.files[0])}
-//           required
-//         />
+        // <label>PAN Card Picture</label>
+        // <input
+        //   type="file"
+        //   accept="image/*"
+        //   onChange={(e) => setPanPic(e.target.files[0])}
+        //   required
+        // />
 
 //         <button disabled={loading}>
 //           {loading ? "Registering..." : "Register Worker"}
