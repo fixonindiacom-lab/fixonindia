@@ -1,17 +1,19 @@
 import React from "react";
 import "./AboutPage.css";
 import WhyChooseUs from "./WhyChooseUs";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutPage() {
+    const navigate = useNavigate();
   return (
     <div className="about-page">
 
       {/* ===== HERO ===== */}
       <section className="about-hero reveal">
         <div className="hero-content">
-          <h1 className="hero-title">About Fix-of-India Services</h1>
+          <h1 className="hero-title">About Fix-on-India Services</h1>
           <p className="hero-subtitle">
-            Premium home services delivered with trust, technology & skilled professionals.
+            At FixonIndia.com, we make home appliance service simple and stress-free. Our trained technicians and transparent pricing ensure dependable repairs you can trust.
           </p>
         </div>
       </section>
@@ -20,12 +22,15 @@ export default function AboutPage() {
       <section className="about-section reveal">
         <h2 className="section-title">Who We Are</h2>
         <p className="section-text">
-          Fix-of-India Services is India’s fastest-growing home-service platform,
-          providing reliable and transparent solutions for AC servicing, electrical
-          work, plumbing, appliances, and complete home maintenance.
-          Our mission is to simplify your daily life by offering expert support,
-          verified technicians, and affordable services anywhere in India.
+          Fix-on-India Services is India’s fastest-growing home-service platform,
+          your trusted partner for professional home appliance repair, maintenance, and smart solutions. We bring certified technicians right to your doorstep for fast, reliable servicing of:
         </p>
+        <ul>
+          <li>Air Conditioners (AC)</li>
+          <li>Refrigerators</li>
+          <li>Washing Machines</li>
+          <li>Other Home Appliances</li>
+        </ul>
       </section>
 
       {/* ===== MISSION & VISION ===== */}
@@ -33,8 +38,7 @@ export default function AboutPage() {
         <div className="mission-card">
           <h3>Our Mission</h3>
           <p>
-            To bring reliable, fast, and quality services to every Indian household
-            through verified experts and modern technology.
+            Our mission is to make home appliance servicing simple, affordable, and trustworthy for every household across India.
           </p>
         </div>
 
@@ -60,7 +64,7 @@ export default function AboutPage() {
         </div>
 
         <div className="stat-card">
-          <h2>50+</h2>
+          <h2>10+</h2>
           <p>Cities Covered</p>
         </div>
 
@@ -75,7 +79,7 @@ export default function AboutPage() {
         <h2>Need a Professional Service?</h2>
         <p>Book a trusted technician anytime with just one click.</p>
 
-        <button className="acta-btn">Book Service</button>
+        <button className="acta-btn" onClick={()=>{navigate("/service")}}>Book Service</button>
       </section>
 
         <WhyChooseUs/>

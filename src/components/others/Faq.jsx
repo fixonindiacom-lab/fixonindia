@@ -10,17 +10,12 @@ const faqData = [
   {
     question: "Do you provide warranty on AC servicing and repairs?",
     answer:
-      "Yes! We provide 30–90 days service warranty depending on the service type. All spare parts come with brand warranty.",
+      "Yes! We provide upto 90 days service warranty depending on the service type. All spare parts come with brand warranty.",
   },
   {
     question: "How do I know if my AC needs gas refilling?",
     answer:
       "Common signs include low cooling, high electricity bills, ice formation on coils, or AC running continuously. Our expert will inspect and confirm before any work.",
-  },
-  {
-    question: "Do you offer home electrical repairs too?",
-    answer:
-      "Yes, we provide electrical services including wiring, switchboard repair, fan installation, inverter setup, and much more.",
   },
   {
     question: "Are your technicians trained and verified?",
@@ -30,7 +25,7 @@ const faqData = [
   {
     question: "What are your service charges?",
     answer:
-      "Basic inspection starts at ₹99–₹149 depending on city. Final charges depend on repair type and spare parts used.",
+      "Basic inspection starts at ₹199 depending on city. Final charges depend on repair type and spare parts used.",
   },
 ];
 

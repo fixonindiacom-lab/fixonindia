@@ -1,0 +1,12 @@
+Domain - Hostinger 
+Deployement - Render
+OTP - Resend
+Code - github
+Assets - Cloudinary 
+
+
+
+DB - Mongo Atlas - fixofindia - c0 - sale-el
+https://cloud.mongodb.com/v2/6936c756e667e36cd448e2e7#/explorer/
+
+

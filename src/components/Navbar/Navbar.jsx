@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* LOGO */}
         <NavLink to="/" className="navbar-logo">
           <img src={logo} alt="Logo" className="logo-img" />
-          {/* <span className="logo-text">Fix-of-India</span> */}
+          {/* <span className="logo-text">Fix-on-India</span> */}
         </NavLink>
 
         {/* DESKTOP LINKS */}

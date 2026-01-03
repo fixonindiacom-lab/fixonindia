@@ -1,6 +1,7 @@
 import React from "react";
 import "./WhyChooseUs.css";
 import { FiDollarSign, FiClock, FiShield, FiUserCheck } from "react-icons/fi";
+import { MdOutlineCurrencyRupee } from "react-icons/md";
 // import heroImg from "../../assets/logo.png"; // replace with your image
 const heroImg = "https://tse4.mm.bing.net/th/id/OIP.td2QnXfGUWY4G34_GAJK1AHaE8?pid=Api&P=0&h=180";
 
@@ -8,7 +9,7 @@ export default function WhyChooseUs() {
   const points = [
     {
       title: "Transparent Cost",
-      icon: <FiDollarSign />,
+      icon: <MdOutlineCurrencyRupee />,
       description: "No hidden charges. Pay exactly what you see."
     },
     {

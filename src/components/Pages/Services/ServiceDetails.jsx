@@ -34,20 +34,49 @@ export default function ServiceDetails() {
 
         <p className="short-desc">{service.desc}</p>
 
-        <h2>What’s Included</h2>
-        <ul>
-          <li>✔ Complete inspection</li>
-          <li>✔ Technician visit</li>
-          <li>✔ Genuine spare guidance</li>
-          <li>✔ 30-day service warranty</li>
-        </ul>
+              {/* Service Process */}
+<div className="service-process">
+  <h2 className="process-title">🔧 Our Simple & Transparent Service Process</h2>
 
-        <h2>About This Service</h2>
-        <p>
-          Our certified technicians ensure high-quality service using professional
-          tools and transparent pricing. This service is designed to improve
-          appliance performance and extend lifespan.
-        </p>
+  <div className="process-steps">
+    <div className="process-step">
+      <span className="step-number">01</span>
+      <h3>Inspection & Quotation</h3>
+      <p>
+        Our technician inspects your appliance and provides a clear,
+        upfront repair quotation for your approval.
+      </p>
+    </div>
+
+    <div className="process-step">
+      <span className="step-number">02</span>
+      <h3>Customer Approval / Expert Support</h3>
+      <p>
+        Repairs begin only after your consent. If required, you may
+        consult our senior technical expert to make an informed decision.
+      </p>
+    </div>
+
+    <div className="process-step">
+      <span className="step-number">03</span>
+      <h3>Repair & Spare Parts</h3>
+      <p>
+        Repairs are carried out by qualified technicians using genuine
+        spare parts at fixed and transparent prices.
+      </p>
+    </div>
+
+    <div className="process-step highlight">
+      <span className="step-number">✔</span>
+      <h3>Up to 150-Day Warranty</h3>
+      <p>
+        Enjoy automatic service warranty after repair for complete peace
+        of mind.
+      </p>
+    </div>
+  </div>
+</div>
+
 
         <Link className="back-btn" to="/service">
           ← Back to Services

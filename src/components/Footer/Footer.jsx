@@ -16,7 +16,7 @@ export default function Footer() {
 
        {/* Column 1 — Company Info */}
         <div className="footer-col">
-          <h2 className="footer-logo">Fix-of-India Services</h2>
+          <h2 className="footer-logo">Fix-on-India Services</h2>
           <p className="footer-desc">
             Your trusted partner for professional home services, repairs & smart solutions.
           </p>
@@ -53,7 +53,7 @@ export default function Footer() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919540950802?text=Hello%20Fix-of-India%20Services"
+              href="https://wa.me/919540950802?text=Hello%20Fix-on-India%20Services"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +66,7 @@ export default function Footer() {
         {/* Column 2 — Quick Links */}
         <div className="footer-col">
           <h3 className="footer-title">Quick Links</h3>
-          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/service">Services</NavLink>
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/contact">Help & Support</NavLink>
         </div>
@@ -84,7 +84,7 @@ export default function Footer() {
 
           <div className="footer-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55892.70691910171!2d76.57513539883463!3d28.88960493500898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d85a5414251a5%3A0x9f011cc2777a4544!2z4KSw4KWL4KS54KSk4KSVLCDgpLngpLDgpL_gpK_gpL7gpKPgpL4!5e0!3m2!1shi!2sin!4v1765367592541!5m2!1shi!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14025.911777265961!2d76.97508561597671!3d28.495264720146803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1740ab83f6f1%3A0xb5cee10472ba020b!2z4KS44KWH4KSV4KWN4KSf4KSwIDEwMywg4KSX4KWB4KSw4KWB4KSX4KWN4KSw4KS-4KSuLCDgpLngpLDgpL_gpK_gpL7gpKPgpL4gMTIyMDA2!5e0!3m2!1shi!2sin!4v1767424005372!5m2!1shi!2sin"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Fix-of-India Services • All Rights Reserved</p>
+        <p>© {new Date().getFullYear()} Fix-on-India Services • All Rights Reserved</p>
       </div>
 
     </footer>

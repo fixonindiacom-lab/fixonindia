@@ -83,7 +83,7 @@ export default function WorkerRegister() {
           accept="image/*"
           capture="environment"
           onChange={(e) => setAadharPic(e.target.files[0])}
-          required
+          // required
         />
 
         <CameraCapture label="PAN Card" onCapture={setPanPic} />
@@ -92,7 +92,7 @@ export default function WorkerRegister() {
           type="file"
           accept="image/*"
           onChange={(e) => setPanPic(e.target.files[0])}
-          required
+          // required
         />
 
 

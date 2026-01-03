@@ -4,7 +4,7 @@ const services = [
       name: "Power Issue",
       price: 199,
       image:
-        "https://images.unsplash.com/photo-1586201375761-83865001e17b?auto=format&fit=crop&w=800&q=80",
+        "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
       desc: "Diagnosis and repair of refrigerator power and electrical issues.",
     },
     {
@@ -116,7 +116,7 @@ const services = [
     name: "Jet Clean Service",
     price: 450,
     image:
-      "https://images.unsplash.com/photo-1581579185169-1c6c9e8e6f07?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Deep cleaning of your AC using high-pressure jet technology to remove dust, dirt, and bacteria for improved cooling efficiency.",
   },
   {
@@ -124,7 +124,7 @@ const services = [
     name: "Foam Jet Clean Service",
     price: 499,
     image:
-      "https://images.unsplash.com/photo-1626808642875-0aa545482dfb?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Foam-based jet cleaning that thoroughly cleans internal AC components and enhances airflow and cooling performance.",
   },
   {
@@ -132,7 +132,7 @@ const services = [
     name: "Less / No Cooling Repair",
     price: 299,
     image:
-      "https://images.unsplash.com/photo-1581579185169-1c6c9e8e6f07?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Repair service for AC units facing low or no cooling issues due to gas leakage, clogged filters, or faulty components.",
   },
   {
@@ -140,7 +140,7 @@ const services = [
     name: "Power Issue Repair",
     price: 299,
     image:
-      "https://images.unsplash.com/photo-1626808642875-0aa545482dfb?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Complete diagnosis and repair of AC power issues including wiring, PCB faults, and electrical failures.",
   },
   {
@@ -148,7 +148,7 @@ const services = [
     name: "Noise / Smell Repair",
     price: 499,
     image:
-      "https://images.unsplash.com/photo-1581579185169-1c6c9e8e6f07?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Fix unusual noises and unpleasant odors caused by fan issues, mold buildup, or loose internal parts.",
   },
   {
@@ -156,7 +156,7 @@ const services = [
     name: "Water Leakage Repair",
     price: 499,
     image:
-      "https://images.unsplash.com/photo-1626808642875-0aa545482dfb?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Repair water leakage problems caused by blocked drain pipes, improper installation, or frozen coils.",
   },
   {
@@ -164,7 +164,7 @@ const services = [
     name: "Gas Refill / Full Checkup",
     price: 2499,
     image:
-      "https://images.unsplash.com/photo-1581579185169-1c6c9e8e6f07?auto=format&fit=crop&w=800&q=80",
+      "https://tse1.mm.bing.net/th/id/OIP.lYs_VJ7oTZncRda8fal1OAHaEK?pid=Api&P=0&h=180",
     desc: "Complete AC gas refill along with pressure testing, leak detection, and full system performance check.",
   },
   {
