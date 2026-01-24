@@ -77,7 +77,7 @@ export default function WorkerRegister() {
 
 
         {/* <CameraCapture label="Aadhaar Card" onCapture={setAadharPic} /> */}
-                <label>Aadhar Card Picture</label>
+                <label>Aadhar Card:Both side PDF or Picture</label>
         <input
           type="file"
           accept="image/*"
@@ -87,7 +87,7 @@ export default function WorkerRegister() {
         />
 
         {/* <CameraCapture label="PAN Card" onCapture={setPanPic} /> */}
-        <label>PAN Card Picture</label>
+        <label>PAN Card PDF/Picture</label>
         <input
           type="file"
           accept="image/*"
@@ -285,4 +285,5 @@ export default function WorkerRegister() {
 //     </div>
 //   );
 // }
+
 
