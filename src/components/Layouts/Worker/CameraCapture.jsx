@@ -102,37 +102,104 @@
 
 
 
-import { useRef } from "react";
+// import { useRef } from "react";
+// import Webcam from "react-webcam";
+// import "./CameraCapture.css";
+
+// export default function CameraCapture({ label, onCapture }) {
+//   const webcamRef = useRef(null);
+
+//   const captureImage = async () => {
+//     const imageSrc = webcamRef.current.getScreenshot();
+
+//     const blob = await fetch(imageSrc).then((res) => res.blob());
+//     const file = new File([blob], `${label}.jpg`, { type: "image/jpeg" });
+
+//     onCapture(file);
+//   };
+
+//   return (
+//     <div className="camera-box">
+//       <p className="camera-label">{label}</p>
+
+//       <Webcam
+//         ref={webcamRef}
+//         screenshotFormat="image/jpeg"
+//         videoConstraints={{ facingMode: "environment" }}
+//         className="camera-preview"
+//       />
+
+//       <button type="button" className="capture-btn" onClick={captureImage}>
+//         Capture {label}
+//       </button>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+import { useRef, useState } from "react";
 import Webcam from "react-webcam";
 import "./CameraCapture.css";
 
 export default function CameraCapture({ label, onCapture }) {
   const webcamRef = useRef(null);
+  const [capturedImage, setCapturedImage] = useState(null);
+
+  const stopCamera = () => {
+    const stream = webcamRef.current?.video?.srcObject;
+    if (stream) {
+      stream.getTracks().forEach(track => track.stop());
+    }
+  };
 
   const captureImage = async () => {
     const imageSrc = webcamRef.current.getScreenshot();
 
-    const blob = await fetch(imageSrc).then((res) => res.blob());
+    const blob = await fetch(imageSrc).then(res => res.blob());
     const file = new File([blob], `${label}.jpg`, { type: "image/jpeg" });
 
+    setCapturedImage(imageSrc); // freeze frame
+    stopCamera();               // stop live camera
     onCapture(file);
+  };
+
+  const retakeImage = () => {
+    setCapturedImage(null);
   };
 
   return (
     <div className="camera-box">
       <p className="camera-label">{label}</p>
 
-      <Webcam
-        ref={webcamRef}
-        screenshotFormat="image/jpeg"
-        videoConstraints={{ facingMode: "environment" }}
-        className="camera-preview"
-      />
+      {capturedImage ? (
+        <img src={capturedImage} className="camera-preview" alt="Captured" />
+      ) : (
+        <Webcam
+          ref={webcamRef}
+          screenshotFormat="image/jpeg"
+          videoConstraints={{ facingMode: "environment" }}
+          className="camera-preview"
+        />
+      )}
 
-      <button type="button" className="capture-btn" onClick={captureImage}>
-        Capture {label}
-      </button>
+      {!capturedImage ? (
+        <button className="capture-btn" onClick={captureImage}>
+          Capture {label}
+        </button>
+      ) : (
+        <button className="retake-btn" onClick={retakeImage}>
+          Retake {label}
+        </button>
+      )}
     </div>
   );
 }
-
