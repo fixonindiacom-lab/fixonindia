@@ -19,14 +19,23 @@ export default function FilePreview({ fileUrl, label }) {
   }
 
   if (isPdf) {
-    return (
-      <iframe
-        src={fileUrl}
-        title={label}
-        className="preview-pdf"
-      />
-    );
-  }
+  return (
+    <object
+      data={fileUrl}
+      type="application/pdf"
+      width="100%"
+      height="300px"
+    >
+      <p>
+        PDF preview not supported.
+        <a href={fileUrl} target="_blank" rel="noopener noreferrer">
+          Download PDF
+        </a>
+      </p>
+    </object>
+  );
+}
+
 
   // Fallback for DOC, ZIP, etc.
   return (
