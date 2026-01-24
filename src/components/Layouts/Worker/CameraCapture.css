@@ -90,6 +90,16 @@
 
 
 
+.retake-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 
@@ -120,4 +130,5 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 
