@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import API from "../../../config/axiosConfig";
 import "./AdminWorkers.css";
+import FilePreview from "./FilePreview";
+
 
 export default function AdminWorkers() {
   const [workers, setWorkers] = useState([]);
@@ -246,4 +248,5 @@ export default function AdminWorkers() {
     </div>
   );
 }
+
 
