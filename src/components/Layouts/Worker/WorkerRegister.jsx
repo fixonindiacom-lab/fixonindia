@@ -76,23 +76,23 @@ export default function WorkerRegister() {
 
 
 
-        <CameraCapture label="Aadhaar Card" onCapture={setAadharPic} />
+        {/* <CameraCapture label="Aadhaar Card" onCapture={setAadharPic} /> */}
                 <label>Aadhar Card Picture</label>
         <input
           type="file"
           accept="image/*"
           capture="environment"
           onChange={(e) => setAadharPic(e.target.files[0])}
-          // required
+          required
         />
 
-        <CameraCapture label="PAN Card" onCapture={setPanPic} />
+        {/* <CameraCapture label="PAN Card" onCapture={setPanPic} /> */}
         <label>PAN Card Picture</label>
         <input
           type="file"
           accept="image/*"
           onChange={(e) => setPanPic(e.target.files[0])}
-          // required
+          required
         />
 
 
@@ -285,3 +285,4 @@ export default function WorkerRegister() {
 //     </div>
 //   );
 // }
+
