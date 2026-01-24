@@ -187,6 +187,7 @@ export default function AdminWorkers() {
 
         <div className="detail-row images-row">
   <span className="label">Aadhar Card:</span>
+          <p>{selectedWorker.aadharPic}</p>
   <div className="image-grid">
     <FilePreview
       fileUrl={selectedWorker.aadharPic}
@@ -198,6 +199,7 @@ export default function AdminWorkers() {
 
         <div className="detail-row images-row">
   <span className="label">PAN Card:</span>
+          <p>{selectedWorker.panPic}</p>
   <div className="image-grid">
     <FilePreview
       fileUrl={selectedWorker.panPic}
@@ -248,5 +250,6 @@ export default function AdminWorkers() {
     </div>
   );
 }
+
 
 
