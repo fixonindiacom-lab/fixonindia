@@ -164,20 +164,49 @@ export default function AdminWorkers() {
         </div>
 
         {/* Aadhar Pic */}
-        <div className="detail-row images-row">
+        {/* <div className="detail-row images-row">
           <span className="label">Aadhar Card:</span>
           <div className="image-grid">
             <img src={selectedWorker.aadharPic} alt="Aadhar" />
           </div>
-        </div>
+        </div> */}
 
         {/* PAN Pic */}
-        <div className="detail-row images-row">
+        {/* <div className="detail-row images-row">
           <span className="label">PAN Card:</span>
           <div className="image-grid">
             <img src={selectedWorker.panPic} alt="PAN" />
           </div>
-        </div>
+        </div> */}
+
+
+
+
+
+        <div className="detail-row images-row">
+  <span className="label">Aadhar Card:</span>
+  <div className="image-grid">
+    <FilePreview
+      fileUrl={selectedWorker.aadharPic}
+      label="Aadhar"
+    />
+  </div>
+</div>
+
+
+        <div className="detail-row images-row">
+  <span className="label">PAN Card:</span>
+  <div className="image-grid">
+    <FilePreview
+      fileUrl={selectedWorker.panPic}
+      label="PAN"
+    />
+  </div>
+</div>
+
+
+
+        
 
         {/* Work Stats */}
         {/* <div className="detail-row">
@@ -217,3 +246,4 @@ export default function AdminWorkers() {
     </div>
   );
 }
+
