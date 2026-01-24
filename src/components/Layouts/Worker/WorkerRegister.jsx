@@ -80,7 +80,7 @@ export default function WorkerRegister() {
                 <label>Aadhar Card:Both side PDF or Picture</label>
         <input
           type="file"
-          accept="image/*"
+          // accept="image/*"
           capture="environment"
           onChange={(e) => setAadharPic(e.target.files[0])}
           required
@@ -90,7 +90,7 @@ export default function WorkerRegister() {
         <label>PAN Card PDF/Picture</label>
         <input
           type="file"
-          accept="image/*"
+          // accept="image/*"
           onChange={(e) => setPanPic(e.target.files[0])}
           required
         />
@@ -285,5 +285,6 @@ export default function WorkerRegister() {
 //     </div>
 //   );
 // }
+
 
 
