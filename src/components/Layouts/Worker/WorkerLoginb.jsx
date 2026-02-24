@@ -50,7 +50,7 @@ export default function WorkerLogin() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <p style={{ textAlign: "center", margin: "5px 0", color: "#555" }}>
+        {/* <p style={{ textAlign: "center", margin: "5px 0", color: "#555" }}>
           OR
         </p>
 
@@ -59,7 +59,7 @@ export default function WorkerLogin() {
           placeholder="Phone Number "
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-        />
+        /> */}
 
         <button disabled={loading}>
           {loading ? "Logging in..." : "Login"}
@@ -68,3 +68,4 @@ export default function WorkerLogin() {
     </div>
   );
 }
+
