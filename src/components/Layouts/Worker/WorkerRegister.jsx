@@ -81,7 +81,7 @@ export default function WorkerRegister() {
         <input
           type="file"
           // accept="image/*"
-          capture="environment"
+          // capture="environment"
           onChange={(e) => setAadharPic(e.target.files[0])}
           required
         />
@@ -285,6 +285,7 @@ export default function WorkerRegister() {
 //     </div>
 //   );
 // }
+
 
 
 
