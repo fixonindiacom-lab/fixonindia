@@ -1,0 +1,12 @@
+{
+  "name": "fixonindia-user-web-build",
+  "version": "1.0.0",
+  "description": "FixOnIndia User Web App Compiled Standalone Build",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
