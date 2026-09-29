@@ -1,11 +1,11 @@
 {
-    "name": "fix_on_india",
-    "short_name": "fix_on_india",
+    "name": "FixOnIndia",
+    "short_name": "FixOnIndia",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0F172A",
+    "theme_color": "#2563EB",
+    "description": "FixOnIndia - Premier On-Demand Home & Cleaning Services in India.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
